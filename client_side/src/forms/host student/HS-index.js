@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Personalinfo from "./personal info";
 import Academicinfo from "./academic";
 import Submit from "./submit";
-import './style.css';
+import '../formstyle/formstyles.css'
 
 function Form() {
     const [page, setPage] = useState(0);

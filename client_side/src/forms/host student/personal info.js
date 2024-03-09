@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import { useNavigate } from 'react-router-dom';
-import './style.css';
+import '../formstyle/formstyles.css'
 
 function Personal({ formData, setFormData, setPage }) {
 

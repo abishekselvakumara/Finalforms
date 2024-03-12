@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from './pages/dashboard.js'
 import Student from './forms/host student/HS-index.js'
+import Form from './pages/form.js'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
         <Route path='/' element={<Dashboard/>}/>
         <Route path='/hoststudent' element={<Student/>}/>
+        <Route path='/form' element={<Form/>}/>
         </Routes>
       </BrowserRouter>
     </div>

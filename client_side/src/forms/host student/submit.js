@@ -15,7 +15,7 @@ function Submit({ formData, setFormData, setPage }) {
     return (
         <>
             <div >
-            <Container fluid>
+                <Container fluid>
                     <Row className='backg'>
                         <Row className='text-center align-items-center m-0 p-0' style={{ height: '8vh' }}>
                             <Col sm-4 >Personal Info</Col>
@@ -24,31 +24,41 @@ function Submit({ formData, setFormData, setPage }) {
                         </Row>
                         <ProgressBar now={100} visuallyHidden className='p-0 m-0' style={{ height: '.75vh' }} />
                     </Row>
-                    <form onSubmit={handleFormSubmit}>
-                    <Row className='d-flex justify-content-around'>
-                        <Col lg={4} xs={12} className='d-flex flex-column mt-4'><h>Name</h><p className='mt-1 p-1 shadows' >{formData.Name}</p></Col>
-                        <Col lg={4} xs={12} className='d-flex flex-column mt-4'><h>Date of Birth</h><p className='mt-1 p-1 shadows' >{formData.DateofBirth}</p></Col>
-                    </Row>
-                    <Row className='d-flex justify-content-around'>
-                        <Col lg={4} xs={12} className='d-flex flex-column mt-4'><h>Phone Number</h><p className='mt-1 p-1 shadows' >{formData.phonenumber}</p></Col>
-                        <Col lg={4} xs={12} className='d-flex flex-column mt-4'><h>Email</h><p className='mt-1 p-1 shadows' >{formData.email}</p></Col>
-                    </Row>
-                    <Row className='d-flex justify-content-around'>
-                        <Col lg={4} xs={12} className='d-flex flex-column mt-4'><h>Register Number</h><p className='mt-1 p-1 shadows' >{formData.registerno}</p></Col>
-                        <Col lg={4} xs={12} className='d-flex flex-column mt-4'><h>Programme</h><p className='mt-1 p-1 shadows' >{formData.programme}</p></Col>
-                    </Row>
-                    <Row className='d-flex justify-content-around'>
-                        <Col lg={4} xs={12} className='d-flex flex-column mt-4'><h>Course</h><p className='mt-1 p-1 shadows' >{formData.course}</p></Col>
-                        <Col lg={4} xs={12} className='d-flex flex-column mt-4'><h>Semester</h><p className='mt-1 p-1 shadows' >{formData.semester}</p></Col>
-                    </Row>
-                    <Row className='d-flex justify-content-around'>
-                        <Col lg={4} xs={12} className='d-flex flex-column mt-4'><h>Year of Studying</h><p className='mt-1 p-1 shadows' >{formData.yearofstudy}</p></Col>
-                        <Col lg={4} xs={12} className='d-flex flex-column mt-4'><h>Year of Graduation</h><p className='mt-1 p-1 shadows' >{formData.yearofgraduate}</p></Col>
-                    </Row>
-                    <div className="mt-5 mb-5 w-100 d-flex justify-content-center">
-                            <div className="w-75 d-flex justify-content-between">
+                    <form onSubmit={handleFormSubmit} className='w-100 d-flex flex-column align-items-center'>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.Name}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Date of Birth</h><p className='mt-1 p-1 shadows inwidth' >{formData.DateofBirth}</p></Col>
+                            </Row>
+                        </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Phone Number</h><p className='mt-1 p-1 shadows inwidth' >{formData.phonenumber}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Email</h><p className='mt-1 p-1 shadows inwidth' >{formData.email}</p></Col>
+                            </Row>
+                        </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Register Number</h><p className='mt-1 p-1 shadows inwidth' >{formData.registerno}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Programme</h><p className='mt-1 p-1 shadows inwidth' >{formData.programme}</p></Col>
+                            </Row>
+                        </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Course</h><p className='mt-1 p-1 shadows inwidth' >{formData.course}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Semester</h><p className='mt-1 p-1 shadows inwidth' >{formData.semester}</p></Col>
+                            </Row>
+                        </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Year of Studying</h><p className='mt-1 p-1 shadows inwidth' >{formData.yearofstudy}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Year of Graduation</h><p className='mt-1 p-1 shadows inwidth' >{formData.yearofgraduate}</p></Col>
+                            </Row>
+                        </div>
+                        <div className="mt-5 mb-5 w-100 d-flex justify-content-center">
+                            <div className="d-flex justify-content-between bwidth">
 
-                                <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }}
+                                <button className="p-2 ps-3 pe-3 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }}
                                     onClick={() => { setPage(1) }}>
                                     Previous
                                 </button>

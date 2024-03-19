@@ -19,6 +19,7 @@ function Form() {
         yearofgraduate: "",
     });
 
+
     const PageDisplay = () => {
         if (page === 0) {
             return <Personalinfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;

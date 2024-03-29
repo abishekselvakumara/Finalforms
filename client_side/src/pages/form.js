@@ -1,25 +1,83 @@
-import React from 'react'
-import '../style/style.css'
-import Dash from './dashboard'
-import Home from './home'
-import Forms from '../forms/host student/HS-index'
+import React, { useState } from "react";
+import Personalinfo from "../forms/host student/personal info";
+import Academicinfo from "../forms/host student/academic";
+import Submit from "../forms/host student/submit";
+import TopNav from '../components/top-navigation'
+import SideNav from '../components/side-nav'
+import '../styles/dashBoard.css'
+import '../styles/formstyles.css'
 
 function Form() {
+  const [page, setPage] = useState(0);
+  const [formData, setFormData] = useState({
+    Name: "",
+    DateofBirth: "",
+    phonenumber: "",
+    email: "",
+    registerno: "",
+    programme: "",
+    course: "",
+    semester: "",
+    yearofstudy: "",
+    yearofgraduate: "",
+  });
+
+
+  const PageDisplay = () => {
+    if (page === 0) {
+      return <Personalinfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
+    } else if (page === 1) {
+      return <Academicinfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
+    } else {
+      return <Submit formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
+    }
+  };
+
   return (
-    <div className='m-0 p-0' >
-      <div className='p-3'>
-        <Home />
-      </div>
-      <div className='d-flex '>
-        <div className='pt-3'>
-          <Dash />
+    <>
+      <TopNav />
+      <div class='db-modal'>
+        <SideNav />
+        <div className='db-content' style={{ paddingBottom: '0px' }}>
+          <div style={{ width: '95%' }}>
+            <div className='h2 text-center mt-3 mb-3' style={{ color: '#fff' }}> REGISTRATION FORM</div>
+            <div style={{ backgroundColor: '#fff', borderRadius: '20px' }} className='mb-3'>{PageDisplay()}</div>
+          </div>
         </div>
-        <div className='p-3 w-100'>
-          <Forms/>
-        </div>
       </div>
-    </div>
-  )
+
+
+    </>
+  );
 }
 
 export default Form;
+
+
+
+// import React from 'react'
+// import '../styles/dashBoard.css'
+// // import Dash from './dashboard'
+// import Home from './home'
+// import Forms from '../forms/host student/HS-index'
+// import TopNav from '../components/top-navigation'
+// import SideNav from '../components/side-nav'
+
+// function Form() {
+//   return (
+//     <>
+//       <TopNav />
+//       <div class='db-modal'>
+//         <SideNav />
+//         <div className='db-content' style={{ paddingBottom: '0px' }}>
+//           <div style={{ width: '95%' }}>
+//             <div className='h2 text-center mt-3 mb-3' style={{ color: '#fff' }}> REGISTRATION FORM</div>
+//             <div style={{ backgroundColor: '#fff', borderRadius: '20px' }} className='mb-3'><Forms /></div>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   )
+// }
+
+// export default Form;

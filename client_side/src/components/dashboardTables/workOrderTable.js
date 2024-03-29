@@ -1,0 +1,137 @@
+import React from 'react'
+import { useState } from 'react'
+
+function pagination (p) {
+  console.log(p - 1)
+  let pages = document.getElementsByClassName('pages')
+  pages[p - 1].style.backgroundColor = '#EF6C1B'
+  pages[p - 1].style.color = 'white'
+  for (let i = 0; i < pages.length; i++) {
+    if (i !== p - 1) {
+      pages[i].style.backgroundColor = 'white'
+      pages[i].style.color = 'black'
+    }
+  }
+}
+
+function WorkOrder () {
+  const [state, setActive] = useState(1)
+  return (
+    <>
+      <div class='table-content'>
+        <div id='columns-header' class='column-header'>
+          <div class='col c-1'>S.No</div>
+          <div class='col c-2'>Job Work</div>
+          <div class='col c-3'>Descrption</div>
+          <div class='col c-4'>Qunatity</div>
+          <div class='col c-5'>Expected Date of Delivery</div>
+          <div class='col c-6'>Raw Material Requirement</div>
+          <div class='col c-7'>Details</div>
+        </div>
+        <div class='table-rows'>
+          <div id='row-wrapper' class='data-wrapper'>
+            <div class='col c-1 text-wrapper'>1</div>
+            <div class='col c-2 text-wrapper'>Wooden Modal</div>
+            <div class='col c-3 text-wrapper'>Descrption</div>
+            <div class='col c-4 text-wrapper'>5</div>
+            <div class='col c-5 text-wrapper'>20/5/24</div>
+            <div class='col c-6 text-wrapper'>Yes</div>
+            <div class='col c-7 text-wrapper'>Nil</div>
+          </div>
+          <div id='row-wrapper' class='data-wrapper'>
+            <div class='col c-1 text-wrapper'>1</div>
+            <div class='col c-2 text-wrapper'>Wooden Modal</div>
+            <div class='col c-3 text-wrapper'>Descrption</div>
+            <div class='col c-4 text-wrapper'>5</div>
+            <div class='col c-5 text-wrapper'>20/5/24</div>
+            <div class='col c-6 text-wrapper'>Yes</div>
+            <div class='col c-7 text-wrapper'>Nil</div>
+          </div>
+          <div id='row-wrapper' class='data-wrapper'>
+            <div class='col c-1 text-wrapper'>1</div>
+            <div class='col c-2 text-wrapper'>Wooden Modal</div>
+            <div class='col c-3 text-wrapper'>Descrption</div>
+            <div class='col c-4 text-wrapper'>5</div>
+            <div class='col c-5 text-wrapper'>20/5/24</div>
+            <div class='col c-6 text-wrapper'>Yes</div>
+            <div class='col c-7 text-wrapper'>Nil</div>
+          </div>
+          <div id='row-wrapper' class='data-wrapper'>
+            <div class='col c-1 text-wrapper'>1</div>
+            <div class='col c-2 text-wrapper'>Wooden Modal</div>
+            <div class='col c-3 text-wrapper'>Descrption</div>
+            <div class='col c-4 text-wrapper'>5</div>
+            <div class='col c-5 text-wrapper'>20/5/24</div>
+            <div class='col c-6 text-wrapper'>Yes</div>
+            <div class='col c-7 text-wrapper'>Nil</div>
+          </div>
+          <div id='row-wrapper' class='data-wrapper'>
+            <div class='col c-1 text-wrapper'>1</div>
+            <div class='col c-2 text-wrapper'>Wooden Modal</div>
+            <div class='col c-3 text-wrapper'>Descrption</div>
+            <div class='col c-4 text-wrapper'>5</div>
+            <div class='col c-5 text-wrapper'>20/5/24</div>
+            <div class='col c-6 text-wrapper'>Yes</div>
+            <div class='col c-7 text-wrapper'>Nil</div>
+          </div>
+        </div>
+      </div>
+      <div class='table-pagination'>
+        <button class='pagination-control page-box back' disabled>
+          <i class='fa fa-angle-left'></i>
+        </button>
+        <button
+          class='pages page-box'
+          id='p1'
+          onClick={() => {
+            setActive(1)
+            pagination(1)
+          }}
+        >
+          1
+        </button>
+        <button
+          class='pages page-box p2'
+          onClick={() => {
+            setActive(2)
+            pagination(2)
+          }}
+        >
+          2
+        </button>
+        <button
+          class='pages page-box p3'
+          onClick={() => {
+            setActive(3)
+            pagination(3)
+          }}
+        >
+          3
+        </button>
+        <button
+          class='pages page-box p5'
+          onClick={() => {
+            setActive(4)
+            pagination(4)
+          }}
+        >
+          4
+        </button>
+        <button
+          class='pages page-box p6'
+          onClick={() => {
+            setActive(5)
+            pagination(5)
+          }}
+        >
+          5
+        </button>
+        <button class='pagination-control page-box next'>
+          <i class='fa fa-angle-right'></i>
+        </button>
+      </div>
+    </>
+  )
+}
+
+export default WorkOrder

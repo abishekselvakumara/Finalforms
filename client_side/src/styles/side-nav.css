@@ -1,0 +1,121 @@
+.side-nav-modal {
+    position: relative;
+    width: 400px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgb(51, 51, 233) 0%, rgb(0, 72, 202) 100%);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    z-index: 3;
+
+    .nav-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+        width: 300px;
+        position: relative;
+        padding: 10px;
+        margin-top: 20px;
+        transition: all 0.5s ease;
+        height: 95%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        .nav-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            width: 250px;
+            margin-left: 5px;
+            .profile {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: black;
+            }
+
+            .username {
+                font-size: 25px;
+                color: white;
+            }
+        }
+
+        .navs {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 80%;
+            padding: 10px;
+            margin-left: 40px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                width: 150px;
+            }
+        }
+
+        .nav-footer {
+            margin: 0 auto 0 auto;
+            #logout-btn{
+                border: none;
+                background-color:#EF6C1B;
+                color:#ffffff;
+                width: 200px;
+                height: 50px;
+                border-radius: 12px;
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .side-nav-control {
+        position: absolute;
+        right: 10%;
+        top: 35%;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        transition: all 0.5s ease;
+        #controller {
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            transition: all 0.5s ease;
+        }
+    }
+}
+
+@media screen and (max-width:1260px) {
+    .side-nav-modal {
+        position: absolute;
+        height: 100%;
+        width: 30px;
+        .nav-content{
+            align-items: center;
+            margin: 20px auto 0 auto;
+            .nav-header{
+                flex-direction: column;
+                .profile{
+                    width: 100px;
+                    height: 100px;
+                }
+                .username{
+                    font-size: 30px;
+                }
+            }
+            .navs{
+                margin: 0;
+                width: max-content;
+                text-align: center;
+                a{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

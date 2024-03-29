@@ -32,9 +32,9 @@ function Form() {
 
     return (
         <>
-            <div className="b">
+            
                 <div className="transition-wrapper">{PageDisplay()}</div>
-            </div>
+            
         </>
     );
 }

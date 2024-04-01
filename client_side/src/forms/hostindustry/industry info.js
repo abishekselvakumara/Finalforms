@@ -28,8 +28,8 @@ function Personal({ formData, setFormData, setPage }) {
                 <Container fluid>
                     <Row className='backg'>
                         <Row className='text-center align-items-center m-0 p-0' style={{ height: '8vh' }}>
-                            <Col sm-4 style={{ color: '#EF6C1B' }}>Personal Info</Col>
-                            <Col sm-4 style={{ opacity:'0.5' }}>Academic Info</Col>
+                            <Col sm-4 style={{ color: '#EF6C1B' }}>Industry Info</Col>
+                            <Col sm-4 style={{ opacity:'0.5' }}>Industry region</Col>
                             <Col sm-4 style={{ opacity:'0.5' }}>Submit</Col>
                         </Row>
                         <Row><ProgressBar now={33.33} visuallyHidden className='p-0 m-0' style={{ height: '.75vh' }} /></Row>
@@ -38,12 +38,12 @@ function Personal({ formData, setFormData, setPage }) {
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
-                                    <h>Name</h>
-                                    <input className='mt-1 p-1 shadows inwidth' name='FacultyName' required value={formData.FacultyName} onChange={getinput} />
+                                    <h>Industry Name</h>
+                                    <input className='mt-1 p-1 shadows inwidth' name='IndustryName' required value={formData.StudentName} onChange={getinput} />
                                 </Col>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
-                                    <h>Date of Birth</h>
-                                    <Form.Control className='mt-1 p-1 shadows inwidth' type='date' name='DateofBirth' min="1900-01-01" max="2050-01-01" required value={formData.DateofBirth} onChange={getinput} />
+                                    <h>GST Number</h>
+                                    <input className='mt-1 p-1 shadows inwidth' name='GSTNumber' required value={formData.GSTNumber} onChange={getinput} />
                                 </Col>
                             </Row>
                         </div>
@@ -59,14 +59,21 @@ function Personal({ formData, setFormData, setPage }) {
                                 </Col>
                             </Row>
                         </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-Start'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
+                                    <h>Website</h>
+                                    <input className='mt-1 p-1 shadows inwidth' name='Website' type='link' required value={formData.website} onChange={getinput} />
+                                </Col>
+                                </Row>
+                                </div>
                         <div className="mt-5 mb-5 w-100 d-flex justify-content-center">
-                            <div className=" d-flex flex-row-reverse justify-content-between bwidth" >
-                                <button className="p-2 ps-4 pe-4 border-0 rounded-3 autof" autoFocus style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
-                                    Next
-                                </button>
+                            <div className=" d-flex justify-content-between bwidth" >
                                 <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }}
                                     onClick={() => { navigate('/dashboard') }}>
-                                    Back
+                                </button>
+                                <button className="p-2 ps-4 pe-4 border-0 rounded-3 autof" autoFocus style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
+                                    Next
                                 </button>
                             </div>
                         </div>

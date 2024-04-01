@@ -27,7 +27,7 @@ function Submit({ formData, setFormData, setPage }) {
                     <form onSubmit={handleFormSubmit} className='w-100 d-flex flex-column align-items-center'>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Faculty Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.FacultyName}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Student Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.StudentName}</p></Col>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Date of Birth</h><p className='mt-1 p-1 shadows inwidth' >{formData.DateofBirth}</p></Col>
                             </Row>
                         </div>
@@ -39,24 +39,25 @@ function Submit({ formData, setFormData, setPage }) {
                         </div>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Faculty ID</h><p className='mt-1 p-1 shadows inwidth' >{formData.FacultyID}</p></Col>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Designation</h><p className='mt-1 p-1 shadows inwidth' >{formData.Designation}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Address</h><p className='mt-1 p-1 shadows inwidth' >{formData.Address}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Student ID</h><p className='mt-1 p-1 shadows inwidth' >{formData.StudentID}</p></Col>
                             </Row>
                         </div>
                         <div className='formdata'>
-                            <Row className='d-flex justify-content-start'>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Department</h><p className='mt-1 p-1 shadows inwidth' >{formData.Department}</p></Col>
-                                
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>School Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.SchoolName}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>UDISE Code</h><p className='mt-1 p-1 shadows inwidth' >{formData.UDISECode}</p></Col>
                             </Row>
                         </div>
                         <div className="mt-5 mb-5 w-100 d-flex justify-content-center">
-                            <div className="d-flex flex-row-reverse justify-content-between bwidth">
-                                <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
-                                    Submit
-                                </button>
+                            <div className="d-flex justify-content-between bwidth">
+
                                 <button className="p-2 ps-3 pe-3 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }}
                                     onClick={() => { setPage(1) }}>
                                     Previous
+                                </button>
+                                <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
+                                    Submit
                                 </button>
                             </div>
                         </div>

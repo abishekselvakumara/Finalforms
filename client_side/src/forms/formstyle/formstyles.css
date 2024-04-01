@@ -41,9 +41,10 @@
         width: 100%;
     }
 }
-.autof:focus{
-    outline: none;
+.none{
+    display: none;
 }
+
 .heightf{
     height: 65vh;
     justify-content: center;

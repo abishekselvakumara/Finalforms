@@ -27,8 +27,8 @@ function Submit({ formData, setFormData, setPage }) {
                     <form onSubmit={handleFormSubmit} className='w-100 d-flex flex-column align-items-center'>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Faculty Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.FacultyName}</p></Col>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Date of Birth</h><p className='mt-1 p-1 shadows inwidth' >{formData.DateofBirth}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Industry Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.IndustryName}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>GSTNumber</h><p className='mt-1 p-1 shadows inwidth' >{formData.GSTNumber}</p></Col>
                             </Row>
                         </div>
                         <div className='formdata'>
@@ -39,24 +39,31 @@ function Submit({ formData, setFormData, setPage }) {
                         </div>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Faculty ID</h><p className='mt-1 p-1 shadows inwidth' >{formData.FacultyID}</p></Col>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Designation</h><p className='mt-1 p-1 shadows inwidth' >{formData.Designation}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Website</h><p className='mt-1 p-1 shadows inwidth' >{formData.Website}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Street Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.StreetName}</p></Col>
                             </Row>
                         </div>
                         <div className='formdata'>
-                            <Row className='d-flex justify-content-start'>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Department</h><p className='mt-1 p-1 shadows inwidth' >{formData.Department}</p></Col>
-                                
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>City</h><p className='mt-1 p-1 shadows inwidth' >{formData.City}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>District</h><p className='mt-1 p-1 shadows inwidth' >{formData.District}</p></Col>
+                            </Row>
+                        </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>State</h><p className='mt-1 p-1 shadows inwidth' >{formData.State}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Pincode</h><p className='mt-1 p-1 shadows inwidth' >{formData.Pincode}</p></Col>
                             </Row>
                         </div>
                         <div className="mt-5 mb-5 w-100 d-flex justify-content-center">
-                            <div className="d-flex flex-row-reverse justify-content-between bwidth">
-                                <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
-                                    Submit
-                                </button>
+                            <div className="d-flex justify-content-between bwidth">
+
                                 <button className="p-2 ps-3 pe-3 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }}
                                     onClick={() => { setPage(1) }}>
                                     Previous
+                                </button>
+                                <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
+                                    Submit
                                 </button>
                             </div>
                         </div>

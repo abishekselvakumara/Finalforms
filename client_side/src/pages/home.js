@@ -54,7 +54,7 @@ function Home() {
                 </div>
               </div>
             </Col>
-            <Col lg={12} sm={12} className='homethird mt-5 '>
+            <Col lg={12} sm={12} className='homethird margin'>
               <div className='thirdleft m-3'>
                 <div className='m-4'>
                   <div className='mb-4'><img src={Third1} style={{ width: '50%', height: '50%' }} /></div>

@@ -38,8 +38,8 @@ function Personal({ formData, setFormData, setPage }) {
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
-                                    <h>Name</h>
-                                    <input className='mt-1 p-1 shadows inwidth' name='FacultyName' required value={formData.FacultyName} onChange={getinput} />
+                                    <h>Student Name</h>
+                                    <input className='mt-1 p-1 shadows inwidth' name='StudentName' required value={formData.StudentName} onChange={getinput} />
                                 </Col>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
                                     <h>Date of Birth</h>
@@ -59,14 +59,23 @@ function Personal({ formData, setFormData, setPage }) {
                                 </Col>
                             </Row>
                         </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-Start'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
+                                    <h>Address</h>
+                                    <input className='mt-1 p-1 shadows inwidth' Name='Address' required value={formData.Address} onChange={getinput} />
+                                </Col>
+                                </Row>
+                                </div>
+
                         <div className="mt-5 mb-5 w-100 d-flex justify-content-center">
-                            <div className=" d-flex flex-row-reverse justify-content-between bwidth" >
-                                <button className="p-2 ps-4 pe-4 border-0 rounded-3 autof" autoFocus style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
-                                    Next
-                                </button>
+                            <div className=" d-flex justify-content-between bwidth" >
                                 <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }}
                                     onClick={() => { navigate('/dashboard') }}>
                                     Back
+                                </button>
+                                <button className="p-2 ps-4 pe-4 border-0 rounded-3 autof" autoFocus style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
+                                    Next
                                 </button>
                             </div>
                         </div>

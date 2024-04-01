@@ -44,19 +44,26 @@ function Submit({ formData, setFormData, setPage }) {
                             </Row>
                         </div>
                         <div className='formdata'>
-                            <Row className='d-flex justify-content-start'>
+                            <Row className='d-flex justify-content-between'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Department</h><p className='mt-1 p-1 shadows inwidth' >{formData.Department}</p></Col>
-                                
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Institute Type</h><p className='mt-1 p-1 shadows inwidth' >{formData.InstituteType}</p></Col>
+                            </Row>
+                        </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>Institute Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.InstituteName}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'><h>AISHE Code</h><p className='mt-1 p-1 shadows inwidth' >{formData.AISHECode}</p></Col>
                             </Row>
                         </div>
                         <div className="mt-5 mb-5 w-100 d-flex justify-content-center">
-                            <div className="d-flex flex-row-reverse justify-content-between bwidth">
-                                <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
-                                    Submit
-                                </button>
+                            <div className="d-flex justify-content-between bwidth">
+
                                 <button className="p-2 ps-3 pe-3 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }}
                                     onClick={() => { setPage(1) }}>
                                     Previous
+                                </button>
+                                <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
+                                    Submit
                                 </button>
                             </div>
                         </div>

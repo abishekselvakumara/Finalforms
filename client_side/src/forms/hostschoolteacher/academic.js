@@ -35,30 +35,30 @@ function Academic({ formData, setFormData, setPage }) {
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
-                                    <h>Faculty ID</h>
-                                    <input className='mt-1 p-1 shadows inwidth' name='FacultyID' required value={formData.FacultyID} onChange={getinput} /></Col>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
-                                    <h>Designation</h>
-                                    <input  className='mt-1 p-1 shadows inwidth' name='Designation' required value={formData.Designation} onChange={getinput} />
+                                    <h>Teacher ID</h>
+                                    <input className='mt-1 p-1 shadows inwidth' name='TeacherID' required value={formData.TeacherID} onChange={getinput} /></Col>
+                                    <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
+                                    <h>Institute Name</h>
+                                    <input  className='mt-1 p-1 shadows inwidth' name='InstituteName' required value={formData.InstituteName} onChange={getinput} />
                                 </Col>
                             </Row>
                         </div>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-start'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
-                                    <h>Department</h>
-                                    <input  className='mt-1 p-1 shadows inwidth' name='Department' required value={formData.Department} onChange={getinput} />
+                                    <h>UDISE Code</h>
+                                    <input  className='mt-1 p-1 shadows inwidth' name='UDISECode' required value={formData.UDISECode} onChange={getinput} />
                                 </Col>
                             </Row>
                         </div>
                         <div className="mt-5 mb-5 w-100 d-flex justify-content-center">
-                            <div className="d-flex flex-row-reverse justify-content-between bwidth ">
-                            <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
-                                    Next
-                                </button>
+                            <div className="d-flex justify-content-between bwidth ">
                                 <button className="p-2 ps-3 pe-3 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }}
                                     onClick={() => { setPage(0) }}>
                                     Previous
+                                </button>
+                                <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
+                                    Next
                                 </button>
                             </div>
                         </div>

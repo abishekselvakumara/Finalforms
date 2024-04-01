@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import '../formstyle/formstyles.css'
-// import Form from 'react-bootstrap/Form';
+import Form from 'react-bootstrap/Form';
 
 function Academic({ formData, setFormData, setPage }) {
 
@@ -44,21 +44,46 @@ function Academic({ formData, setFormData, setPage }) {
                             </Row>
                         </div>
                         <div className='formdata'>
-                            <Row className='d-flex justify-content-start'>
+                            <Row className='d-flex justify-content-between'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
                                     <h>Department</h>
                                     <input  className='mt-1 p-1 shadows inwidth' name='Department' required value={formData.Department} onChange={getinput} />
                                 </Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
+                                    <h>Institute Type</h>
+                                    <Form.Select className='mt-1 p-1 shadows inwidth' required value={formData.InstituteType} name='InstituteType' onChange={getinput}>
+                                        <option value=''>Select Institute Type</option>
+                                        <option value="Engineering">Engineering</option>
+                                        <option value="Arts&Science">Arts & Science</option>
+                                        <option value="Polytechnic">Polytechnic</option>
+                                        <option value="ITI">ITI</option>
+                                        <option value="Medical">Medical</option>
+                                    </Form.Select>
+                                </Col>
+                                
+                            </Row>
+                        </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-between'>
+                            <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
+                                    <h>Institute Name</h>
+                                    <input  className='mt-1 p-1 shadows inwidth' name='InstituteName' required value={formData.InstituteName} onChange={getinput} />
+                                </Col>
+                            
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4'>
+                                    <h>AISHE Code</h>
+                                    <input  className='mt-1 p-1 shadows inwidth' name='AISHECode' required value={formData.AISHECode} onChange={getinput} />
+                                </Col>
                             </Row>
                         </div>
                         <div className="mt-5 mb-5 w-100 d-flex justify-content-center">
-                            <div className="d-flex flex-row-reverse justify-content-between bwidth ">
-                            <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
-                                    Next
-                                </button>
+                            <div className="d-flex justify-content-between bwidth ">
                                 <button className="p-2 ps-3 pe-3 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }}
                                     onClick={() => { setPage(0) }}>
                                     Previous
+                                </button>
+                                <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
+                                    Next
                                 </button>
                             </div>
                         </div>

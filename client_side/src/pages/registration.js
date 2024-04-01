@@ -14,7 +14,7 @@ function Register () {
             <div class='content-wrapper reg-btns'>
               <div class='row-wrapper row-1'>
                 <button onClick={() => { window.location.href = "/register/hoststudent" }}>Host Institute Student</button>
-                <button>Host Institute Faculty</button>
+                <button onClick={() => { window.location.href = "/register/hostfaculty" }}>Host Institute Faculty</button>
                 <button>Host Institute Alumni</button>
               </div>
               <div class='row-wrapper row-2'>

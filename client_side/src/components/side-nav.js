@@ -41,7 +41,7 @@ function SideNav () {
             <Link id='link_to_profile' to='/profile'>
               Profile
             </Link>
-            <a href='#'>Schedule Visit</a>
+            <Link to='/schedulevisit'>Schedule Visit</Link>
             <a href='#'>Equipment Reservation</a>
             <a href='#'>Word Order</a>
             <a href='#'>Seed Fund Application</a>

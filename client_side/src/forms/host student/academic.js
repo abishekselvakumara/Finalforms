@@ -94,13 +94,13 @@ function Academic({ formData, setFormData, setPage }) {
                             </div>
                         </div>
                         <div className="mt-5 w-100 d-flex justify-content-center">
-                            <div className="mb-5 d-flex justify-content-between bwidth ">
+                            <div className="mb-5 d-flex flex-row-reverse justify-content-between bwidth ">
+                            <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
+                                    Next
+                                </button>
                                 <button className="p-2 ps-3 pe-3 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }}
                                     onClick={() => { setPage(0) }}>
                                     Previous
-                                </button>
-                                <button className="p-2 ps-4 pe-4 border-0 rounded-3" style={{ background: '#EF6C1B', color: '#fff' }} type="submit">
-                                    Next
                                 </button>
                             </div>
                         </div>

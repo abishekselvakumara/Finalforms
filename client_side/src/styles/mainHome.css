@@ -1,8 +1,8 @@
 .rect {
     position: relative;
-    height: 1200px;
+    height: 1500px;
     background: linear-gradient(119deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
-    transform: skew(0deg, -8deg) translateY(-270px);
+    transform: skew(0deg, -8deg) translateY(-570px);
 }
 
 .expo {
@@ -170,11 +170,19 @@
     width: 370px;
     height: 215px;
 }
-
+.margin{
+    margin-top: 50px;
+}
 @media (max-width: 1200px) {
     .rightSecondimg {
         width: 292px;
         height: 284px;
+    }
+    .rect {
+        height: 1600px;
+    }
+    .margin{
+        margin-top: 5px;
     }
 
     .rightSecond {

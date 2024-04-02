@@ -2,7 +2,7 @@ import Modal from 'react-bootstrap/Modal'
 import React from 'react'
 import Signup from '../components/signup';
 import Button from 'react-bootstrap/Button'
-import '../styles/login.css'
+import '../assets/styles/login.css'
 import { Link } from 'react-router-dom';
 
 function Login(props) {

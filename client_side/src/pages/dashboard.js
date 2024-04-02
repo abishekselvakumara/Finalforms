@@ -1,4 +1,4 @@
-import '../styles/dashBoard.css'
+import '../assets/styles/dashBoard.css'
 import TOPNAV from '../components/top-navigation.js'
 import SIDENAV from '../components/side-nav.js'
 import ScheduleVisitTable from '../components/dashboardTables/scheduleVisitTable.js'

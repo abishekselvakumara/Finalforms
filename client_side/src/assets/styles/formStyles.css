@@ -1,0 +1,117 @@
+.form-select:focus {
+    box-shadow: none;
+    border: 1px solid rgba(26, 26, 26, 0.32);
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid rgba(26, 26, 26, 0.32);
+}
+.progress-bar {
+    background-color: #7CF288;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+    transition: all 0.5s ease;
+}
+.progress, .progress-stacked {
+    --bs-progress-bg: none;
+    --bs-progress-border-radius:none;
+}
+.shadows{
+    border-radius: 6px;
+    border: 1px solid rgba(26, 26, 26, 0.32);
+    box-shadow: 0px 1px 4px 1px rgba(115, 115, 115, 0.25); 
+}
+.shadows:focus {
+    box-shadow: 0px 1px 4px 1px rgba(53, 53, 53, 0.25);
+    outline: none;
+}
+.backg{
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(188, 178, 246, 0.30);
+    box-shadow: 0px 1px 4px 1px rgba(50, 50, 50, 0.25);
+}
+.formdata{
+    width: 80%;
+    padding: 5px; 
+}
+.padding{
+    padding: 5px 10px;
+}
+.bwidth{
+    width: 80%;
+}
+
+.inwidth{
+    width:95%;
+    height: 40px;
+    text-indent: 5px;
+    
+}
+.form-modal {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    gap: 10px;
+    margin: 20px auto 0 auto;
+    transition: all 0.5s ease;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    gap: 25px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(0, 72, 202) 100%);
+    transition: all 0.5s ease;
+    border-radius: 12px;
+    padding: 5px;
+}
+input#file-upload-button{
+    background-color: #7CF288;
+}
+@media (max-width: 800px) {
+    .formdata, .bwidth {
+        width: 100%;
+    }
+    .inwidth{
+        width: 100%;
+    }
+}
+.autof:focus{
+    outline: none;
+}
+.heightf{
+    height: 65vh;
+    justify-content: center;
+    gap: 55px;
+}
+.hdmar{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+/* .trans{
+    animation: anim 0.5s linear forwards;
+}
+
+@keyframes anim {
+    from{
+        
+    }
+    to{
+        
+    }
+} */
+
+@media screen and (max-width:950px) {
+    .heightf{
+        height: 100%;
+    }
+    .form-content {
+        width: 90%;
+        height: 100%;
+    }
+}

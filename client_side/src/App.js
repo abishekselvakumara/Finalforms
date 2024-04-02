@@ -3,11 +3,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from './pages/dashboard.js';
 import Profile from './pages/profile.js'
 import Register from './pages/registration.js'
-// import Student from './forms/host student/HS-index.js';
-import Visit from './forms/scheduleVisit/HS-index.js'
-import HostStudent from './pages/hostStudent.js';
-import HostFaculty from './pages/hostFaculty.js';
-import ScheduleVisit from './pages/scheduleVisit.js'
+import HostStudent from './pages/registerationForm/hostStudent.js';
+import HostFaculty from './pages/registerationForm/hostFaculty.js';
+import HostAlumini from './pages/registerationForm/hostAlumini.js';
+import Entrepreneur from './pages/registerationForm/Entrepreneur.js';
+import OtherStudent from './pages/registerationForm/otherStudent.js';
+import OtherFaculty from './pages/registerationForm/otherFaculty.js';
+import ScheduleVisit from './pages/bookingForm/scheduleVisit.js';
 import NoPage from './pages/noPage.js'
 import Home from './pages/home.js';
 
@@ -22,9 +24,11 @@ function App() {
         <Route path='/register' element={<Register/>}/>
         <Route path='/register/hoststudent' element={<HostStudent/>}/>
         <Route path='/register/hostfaculty' element={<HostFaculty/>}/>
+        <Route path='/register/hostalumini' element={<HostAlumini/>}/>
+        <Route path='/register/entrepreneur' element={<Entrepreneur/>}/>
+        <Route path='/register/otherstudent' element={<OtherStudent/>}/>
+        <Route path='/register/otherfaculty' element={<OtherFaculty/>}/>
         <Route path='/schedulevisit' element={<ScheduleVisit/>}/>
-        {/* <Route path='/host' element={<Student/>}/> */}
-        <Route path='/visit' element={<Visit/>}/>
         <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>

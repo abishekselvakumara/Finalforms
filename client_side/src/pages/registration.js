@@ -1,6 +1,7 @@
-import '../styles/registration.css'
+import '../assets/styles/registration.css'
 import TOPNAV from '../components/top-navigation'
 import SIDENAV from '../components/side-nav'
+import { Link } from 'react-router-dom'
 
 function Register () {
   return (
@@ -13,19 +14,19 @@ function Register () {
             <div class='text-wrapper header'>Select Category</div>
             <div class='content-wrapper reg-btns'>
               <div class='row-wrapper row-1'>
-                <button onClick={() => { window.location.href = "/register/hoststudent" }}>Host Institute Student</button>
-                <button onClick={() => { window.location.href = "/register/hostfaculty" }}>Host Institute Faculty</button>
-                <button>Host Institute Alumni</button>
+               <Link to="/register/hoststudent" className='regbutn'>Host Institute Student</Link> 
+                <Link to="/register/hostfaculty" className='regbutn'>Host Institute Faculty</Link>
+                <Link to="/register/hostalumini" className='regbutn'>Host Institute Alumni</Link>
               </div>
               <div class='row-wrapper row-2'>
-                <button>Other Institute Student</button>
-                <button>Other Institute Faculty</button>
-                <button>Entrepreneur/start-up</button>
+                <Link to="/register/otherstudent" className='regbutn'>Other Institute Student</Link>
+                <Link to="/register/otherfaculty" className='regbutn'>Other Institute Faculty</Link>
+                <Link to="/register/entrepreneur" className='regbutn'>Entrepreneur/start-up</Link>
               </div>
               <div class='row-wrapper row-3'>
-                <button>School Learner</button>
-                <button>School Teacher</button>
-                <button>Industry</button>
+                <Link to="/register/hostfaculty" className='regbutn'>School Learner</Link>
+                <Link to="/register/hostfaculty" className='regbutn'>School Teacher</Link>
+                <Link to="/register/hostfaculty" className='regbutn'>Industry</Link>
               </div>
             </div>
           </div>

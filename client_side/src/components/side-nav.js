@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/side-nav.css'
+import '../assets/styles/side-nav.css'
 import { Link } from 'react-router-dom'
 
 function side_nav_control () {

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import Modal from 'react-bootstrap/Modal'
-import '../styles/signup.css'
+import '../assets/styles/signup.css'
 import { Link } from 'react-router-dom'
 
 function Signup (props) {

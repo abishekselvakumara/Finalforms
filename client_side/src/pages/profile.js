@@ -1,4 +1,4 @@
-import '../styles/profile.css'
+import '../assets/styles/profile.css'
 import TOPNAV from '../components/top-navigation.js'
 import SIDENAV from '../components/side-nav.js'
 import { useState } from 'react'

@@ -1,10 +1,10 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom';
-import '../styles/topNav.css'
-import Logo1 from '../assets/logo1.png'
-import Logo2 from '../assets/logo2.png'
-import Logo3 from '../assets/logo3.png'
+import '../assets/styles/topNav.css'
+import Logo1 from '../assets/images/logo1.png'
+import Logo2 from '../assets/images/logo2.png'
+import Logo3 from '../assets/images/logo3.png'
 
 function top_nav(){
     return(

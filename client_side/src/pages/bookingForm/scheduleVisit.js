@@ -4,7 +4,6 @@ import Academicinfo from "../../components/forms/scheduleVisit/academic";
 import Submit from "../../components/forms/scheduleVisit/submit";
 import TopNav from '../../components/top-navigation'
 import SideNav from '../../components/side-nav'
-import '../../assets/styles/dashBoard.css'
 import '../../assets/styles/formStyles.css'
 
 function Form() {

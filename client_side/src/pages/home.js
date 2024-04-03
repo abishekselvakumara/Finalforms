@@ -2,11 +2,11 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Img from '../assets/images/img.png'
-import Third1 from '../assets/images/1.png'
-import Third2 from '../assets/images/2.png'
-import Third3 from '../assets/images/3.png'
-import Four1 from '../assets/images/section4.png'
+import IdeaLab from '../assets/images/img.png'
+import Workshop from '../assets/images/1.png'
+import Hackathon from '../assets/images/2.png'
+import SocialNetworking from '../assets/images/3.png'
+import About from '../assets/images/section4.png'
 import Five1 from '../assets/images/5.1.png'
 import Five2 from '../assets/images/5.2.png'
 import Five34 from '../assets/images/5.3 & 5.4.png'
@@ -50,14 +50,14 @@ function Home() {
                   </div>
                 </div>
                 <div className='rightSecond'>
-                  <img className='rightSecondimg' src={Img} />
+                  <img className='rightSecondimg' src={IdeaLab} alt='IdeaLab'/>
                 </div>
               </div>
             </Col>
             <Col lg={12} sm={12} className='homethird margin'>
               <div className='thirdleft m-3'>
                 <div className='m-4'>
-                  <div className='mb-4'><img src={Third1} style={{ width: '50%', height: '50%' }} /></div>
+                  <div className='mb-4'><img src={Workshop} alt='Workshop' style={{ width: '50%', height: '50%' }} /></div>
                   <h style={{ fontSize: '24px', color: '#25133f' }}>Innovation Workshops, Industry Talks and Seminars</h>
                   <p className='mt-4' style={{ fontSize: '18px', color: '#747474' }}>FSE block builder is the way of creating site and our customizable features added value on.</p>
                   <a href='#' className='mt-4' style={{ fontSize: '17px', color: '#747474', textDecoration: 'none' }}>Learn More</a>
@@ -65,7 +65,7 @@ function Home() {
               </div>
               <div className='thirdcenter m-3'>
                 <div className='m-4'>
-                  <div className='mb-4'><img src={Third2} style={{ width: '50%', height: '50%' }} /></div>
+                  <div className='mb-4'><img src={Hackathon} alt='Hackathon' style={{ width: '50%', height: '50%' }} /></div>
                   <h className='mt-1' style={{ fontSize: '24px', color: '#25133f' }}>Hackathons, Idea-a-thons and Project Showcases</h>
                   <p className='mt-4' style={{ fontSize: '18px', color: '#747474' }}>FSE block builder is the way of creating site and our customizable features added value on.</p>
                   <a href='#' className='mt-4' style={{ fontSize: '17px', color: '#747474', textDecoration: 'none' }}>Learn More</a>
@@ -73,7 +73,7 @@ function Home() {
               </div>
               <div className='thirdright m-3'>
                 <div className='m-4'>
-                  <div className='mb-4'><img src={Third3} style={{ width: '50%', height: '50%' }} /></div>
+                  <div className='mb-4'><img src={SocialNetworking} alt='SocialNetworking' style={{ width: '50%', height: '50%' }} /></div>
                   <h className='mt-1' style={{ fontSize: '24px', color: '#25133f' }}>Social Networking Initiatives and Mentorship Programs</h>
                   <p className='mt-4' style={{ fontSize: '18px', color: '#747474' }}>While it comes with native builder FSE/Block builder and Elementor, making so easy.</p>
                   <a href='#' className='mt-4' style={{ fontSize: '17px', color: '#747474', textDecoration: 'none' }}>Learn More</a>
@@ -92,7 +92,7 @@ function Home() {
                 </div>
                 <div className='rightFour'>
                   <div >
-                    <img src={Four1} style={{ width: '100%', height: '100%' }} />
+                    <img src={About} style={{ width: '100%', height: '100%' }} />
                   </div>
                 </div>
               </Col>
@@ -139,42 +139,42 @@ function Home() {
               <div className='homethird'>
                 <div className='eightleft m-3 mb-0'>
                   <div className='m-4'>
-                    <div className='mb-4'><img src={Third1} style={{ width: '50%', height: '50%' }} /></div>
+                    <div className='mb-4'><img src={Hackathon} style={{ width: '50%', height: '50%' }} /></div>
                     <h style={{ fontSize: '22px', color: '#ef6c1b' }}>Faculty Development Programs</h>
                     <p className='mt-4' style={{ fontSize: '18px', color: '#747474', lineHeight: '1.5' }}>Igniting Excellence in Teaching: Faculty Development for Tomorrow’s Leaders.</p>
                   </div>
                 </div>
                 <div className='eightcenter m-3 mb-0'>
                   <div className='m-4'>
-                    <div className='mb-4'><img src={Third2} style={{ width: '50%', height: '50%' }} /></div>
+                    <div className='mb-4'><img src={Hackathon} style={{ width: '50%', height: '50%' }} /></div>
                     <h className='mt-1' style={{ fontSize: '22px', color: '#ef6c1b' }}>Professional Skilling Programmes</h>
                     <p className='mt-4' style={{ fontSize: '18px', color: '#747474' }}>Skill Up, Rise Above: Thriving in a Competitive World</p>
                   </div>
                 </div>
                 <div className='eightright m-3 mb-0'>
                   <div className='m-4'>
-                    <div className='mb-4'><img src={Third3} style={{ width: '50%', height: '50%' }} /></div>
+                    <div className='mb-4'><img src={Hackathon} style={{ width: '50%', height: '50%' }} /></div>
                     <h className='mt-1' style={{ fontSize: '22px', color: '#ef6c1b' }}>Skilling Programmes</h>
                     <p className='mt-4' style={{ fontSize: '18px', color: '#747474' }}>Skills for Tomorrow: Embrace Innovation Today.</p>
                   </div>
                 </div>
                 <div className='eightleft m-3'>
                   <div className='m-4'>
-                    <div className='mb-4'><img src={Third1} style={{ width: '50%', height: '50%' }} /></div>
+                    <div className='mb-4'><img src={Hackathon} style={{ width: '50%', height: '50%' }} /></div>
                     <h style={{ fontSize: '22px', color: '#ef6c1b' }}>Annual Conferences</h>
                     <p className='mt-4' style={{ fontSize: '18px', color: '#747474' }}>Inspiring Excellence: AICTE Idealab Annual Innovation Showcase</p>
                   </div>
                 </div>
                 <div className='eightcenter m-3'>
                   <div className='m-4'>
-                    <div className='mb-4'><img src={Third2} style={{ width: '50%', height: '50%' }} /></div>
+                    <div className='mb-4'><img src={Hackathon} style={{ width: '50%', height: '50%' }} /></div>
                     <h className='mt-1' style={{ fontSize: '22px', color: '#ef6c1b' }}>Ideation Workshops</h>
                     <p className='mt-4' style={{ fontSize: '18px', color: '#747474' }}>Where Ideas Take Flight: Ideation Workshops for Inspired Thinkers</p>
                   </div>
                 </div>
                 <div className='eightright m-3'>
                   <div className='m-4'>
-                    <div className='mb-4'><img src={Third3} style={{ width: '50%', height: '50%' }} /></div>
+                    <div className='mb-4'><img src={Hackathon} style={{ width: '50%', height: '50%' }} /></div>
                     <h className='mt-1' style={{ fontSize: '22px', color: '#ef6c1b' }}>Awareness workshops</h>
                     <p className='mt-4' style={{ fontSize: '18px', color: '#747474' }}>Fueling Curiosity, Igniting Innovation: Register for our Awareness Workshops.</p>
                   </div>

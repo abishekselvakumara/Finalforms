@@ -63,7 +63,7 @@ function Personal({ formData, setFormData, setPage }) {
                             <Row className='d-flex justify-content-Start'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
                                     <h>Address</h>
-                                    <input className='mt-1 p-1 shadows inwidth' Name='Address' required value={formData.Address} onChange={getinput} />
+                                    <textarea className='mt-1 p-1 shadows inwidth' Name='Address' rows="4" required value={formData.Address} onChange={getinput} />
                                 </Col>
                                 </Row>
                                 </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Personalinfo from "./personal info";
-import Academicinfo from "./academic";
+import Detail from "./detail";
+import Accommodation from "./accommodation";
 import Submit from "./submit";
 import '../formstyle/formstyles.css'
 
@@ -20,9 +20,9 @@ function Form() {
 
     const PageDisplay = () => {
         if (page === 0) {
-            return <Personalinfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
+            return <Detail formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         } else if (page === 1) {
-            return <Academicinfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
+            return <Accommodation formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         } else {
             return <Submit formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         }

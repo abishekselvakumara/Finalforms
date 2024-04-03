@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Personalinfo from "../../components/forms/equipmentReservation/personal info";
+import PersonalInfo from "../../components/forms/equipmentReservation/personalInfo";
 import Submit from "../../components/forms/equipmentReservation/submit";
 import TopNav from '../../components/top-navigation'
 import SideNav from '../../components/side-nav'
@@ -20,7 +20,7 @@ function Form() {
 
     const PageDisplay = () => {
         if (page === 0) {
-            return <Personalinfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
+            return <PersonalInfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         } else {
             return <Submit formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         }

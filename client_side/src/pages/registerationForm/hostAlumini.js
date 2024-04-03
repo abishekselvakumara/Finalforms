@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Personalinfo from "../../components/forms/hostAlumini/personal info";
-import Academicinfo from "../../components/forms/hostAlumini/academic";
+import PersonalInfo from "../../components/forms/hostAlumini/personalInfo";
+import AcademicInfo from "../../components/forms/hostAlumini/academic";
 import Submit from "../../components/forms/hostAlumini/submit";
 import TopNav from '../../components/top-navigation'
 import SideNav from '../../components/side-nav'
@@ -22,9 +22,9 @@ function Form() {
 
     const PageDisplay = () => {
         if (page === 0) {
-            return <Personalinfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
+            return <PersonalInfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         } else if (page === 1) {
-            return <Academicinfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
+            return <AcademicInfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         } else {
             return <Submit formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         }

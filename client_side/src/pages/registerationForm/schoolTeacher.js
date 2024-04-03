@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Personalinfo from "../../components/forms/schoolTeacher/personal info";
-import Academicinfo from "../../components/forms/schoolTeacher/academic";
+import PersonalInfo from "../../components/forms/schoolTeacher/personalInfo";
+import AcademicInfo from "../../components/forms/schoolTeacher/academic";
 import Submit from "../../components/forms/schoolTeacher/submit";
 import TopNav from '../../components/top-navigation'
 import SideNav from '../../components/side-nav'
@@ -20,9 +20,9 @@ function Form() {
 
     const PageDisplay = () => {
         if (page === 0) {
-            return <Personalinfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
+            return <PersonalInfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         } else if (page === 1) {
-            return <Academicinfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
+            return <AcademicInfo formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         } else {
             return <Submit formData={formData} setFormData={setFormData} page={page} setPage={setPage} />;
         }

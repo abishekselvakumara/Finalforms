@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Personalinfo from "./industry info";
-import Academicinfo from "./industryregion";
+import Personalinfo from "./industryInfo";
+import Academicinfo from "./industryRegion";
 import Submit from "./submit";
 import '../formstyle/formstyles.css'
 

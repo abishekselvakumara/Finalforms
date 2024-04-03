@@ -24,9 +24,9 @@ function Register () {
                 <Link to="/register/entrepreneur" className='regbutn'>Entrepreneur/start-up</Link>
               </div>
               <div class='row-wrapper row-3'>
-                <Link to="/register/hostfaculty" className='regbutn'>School Learner</Link>
-                <Link to="/register/hostfaculty" className='regbutn'>School Teacher</Link>
-                <Link to="/register/hostfaculty" className='regbutn'>Industry</Link>
+                <Link to="/register/schoollearner" className='regbutn'>School Learner</Link>
+                <Link to="/register/Schoolteacher" className='regbutn'>School Teacher</Link>
+                <Link to="/register/industry" className='regbutn'>Industry</Link>
               </div>
             </div>
           </div>

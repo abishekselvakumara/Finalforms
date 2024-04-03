@@ -45,7 +45,7 @@
     width:95%;
     height: 40px;
     text-indent: 5px;
-    
+    margin-bottom: 0px;
 }
 .form-modal {
     position: relative;
@@ -70,6 +70,28 @@
     border-radius: 12px;
     padding: 5px;
 }
+.formscroll{
+    min-height: auto;
+    max-height: 75vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.formscroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .formscroll::-webkit-scrollbar-track {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .formscroll::-webkit-scrollbar-thumb {
+    background: rgb(182, 185, 193); 
+    border-radius: 10px;
+  }
+  
+  .formscroll::-webkit-scrollbar-thumb:hover {
+    background: #2b2b2b; 
+  }
 input#file-upload-button{
     background-color: #7CF288;
 }
@@ -114,4 +136,10 @@ input#file-upload-button{
         width: 90%;
         height: 100%;
     }
+    .formscroll{
+        height: 100%;
+    }
+    .formscroll::-webkit-scrollbar{
+        display: none;
+      }
 }

@@ -24,7 +24,7 @@ function Submit({ formData, setFormData, setPage }) {
                         </Row>
                         <ProgressBar now={100} visuallyHidden className='p-0 m-0' style={{ height: '.75vh' }} />
                     </Row>
-                    <form onSubmit={handleFormSubmit} className='w-100 d-flex flex-column align-items-center'>
+                    <form onSubmit={handleFormSubmit} className='w-100 d-flex flex-column align-items-center formscroll'>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding '><h>Faculty Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.FacultyName}</p></Col>

@@ -15,7 +15,7 @@ function Academic({ formData, setFormData, setPage }) {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        setPage(2);
+        setPage(1);
         console.log(formData)
     };
 
@@ -25,8 +25,8 @@ function Academic({ formData, setFormData, setPage }) {
                 <Container fluid>
                     <Row className='backg'>
                         <Row className='text-center align-items-center m-0 p-0' style={{ height: '8vh' }}>
-                            <Col sm-4 >Personal Info</Col>
-                            <Col sm-4 style={{ color: '#EF6C1B' }}>Academic Info</Col>
+                            <Col sm-4 >Details</Col>
+                            <Col sm-4 style={{ color: '#EF6C1B' }}>Description</Col>
                             <Col sm-4 style={{ opacity:'0.5' }}>Submit</Col>
                         </Row>
                         <Row><ProgressBar now={66.66} visuallyHidden className='p-0 m-0' style={{ height: '.75vh' }} /></Row>
@@ -35,19 +35,47 @@ function Academic({ formData, setFormData, setPage }) {
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
-                                    <h>Faculty ID</h>
-                                    <input className='mt-1 p-1 shadows inwidth' name='FacultyID' required value={formData.FacultyID} onChange={getinput} /></Col>
+                                    <h>Mentor Name</h>
+                                    <input className='mt-1 p-1 shadows inwidth' name='FacultyName' required value={formData.FacultyName} onChange={getinput} /></Col>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
-                                    <h>Designation</h>
+                                    <h>Mentor Designation</h>
                                     <input  className='mt-1 p-1 shadows inwidth' name='Designation' required value={formData.Designation} onChange={getinput} />
                                 </Col>
                             </Row>
                         </div>
                         <div className='formdata'>
-                            <Row className='d-flex justify-content-start'>
+                            <Row className='d-flex justify-content-between'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
-                                    <h>Department</h>
+                                    <h>Mentor Department</h>
                                     <input  className='mt-1 p-1 shadows inwidth' name='Department' required value={formData.Department} onChange={getinput} />
+                                </Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
+                                    <h>Mentor Email</h>
+                                    <input  className='mt-1 p-1 shadows inwidth' name='Email' required value={formData.Email} onChange={getinput} />
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
+                                    <h>Mentor Mobile Number</h>
+                                    <input  className='mt-1 p-1 shadows inwidth' name='MobileNumber' required value={formData.MobileNumber} onChange={getinput} />
+                                </Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
+                                    <h>Project Title</h>
+                                    <input  className='mt-1 p-1 shadows inwidth' name='Title' required value={formData.Title} onChange={getinput} />
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className='formdata'>
+                            <Row className='d-flex justify-content-between'>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
+                                    <h>Domain</h>
+                                    <input  className='mt-1 p-1 shadows inwidth' name='Domain' required value={formData.Domain} onChange={getinput} />
+                                </Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
+                                    <h>Mentor Email</h>
+                                    <input  className='mt-1 p-1 shadows inwidth' name='Department' required value={formData.Email} onChange={getinput} />
                                 </Col>
                             </Row>
                         </div>

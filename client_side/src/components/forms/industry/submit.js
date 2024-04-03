@@ -27,33 +27,32 @@ function Submit({ formData, setFormData, setPage }) {
                     <form onSubmit={handleFormSubmit} className='w-100 d-flex flex-column align-items-center formscroll'>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Alumini Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.AluminiName}</p></Col>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Date of Birth</h><p className='mt-1 p-1 shadows inwidth' >{formData.DateofBirth}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Industry Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.IndustryName}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>GSTNumber</h><p className='mt-1 p-1 shadows inwidth' >{formData.GSTNumber}</p></Col>
                             </Row>
                         </div>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Phone Number</h><p className='mt-1 p-1 shadows inwidth' >{formData.phonenumber}</p></Col>
                                 <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Email</h><p className='mt-1 p-1 shadows inwidth' >{formData.email}</p></Col>
-                                
                             </Row>
                         </div>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Address</h><p className='mt-1 p-1 shadows inwidth' >{formData.Address}</p></Col>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Institute Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.InstituteName}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Website</h><p className='mt-1 p-1 shadows inwidth' >{formData.Website}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Street Name</h><p className='mt-1 p-1 shadows inwidth' >{formData.StreetName}</p></Col>
                             </Row>
                         </div>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Programme</h><p className='mt-1 p-1 shadows inwidth' >{formData.programme}</p></Col>
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Course</h><p className='mt-1 p-1 shadows inwidth' >{formData.course}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>City</h><p className='mt-1 p-1 shadows inwidth' >{formData.City}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>District</h><p className='mt-1 p-1 shadows inwidth' >{formData.District}</p></Col>
                             </Row>
                         </div>
                         <div className='formdata'>
                             <Row className='d-flex justify-content-between'>
-                                
-                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Year of Passing</h><p className='mt-1 p-1 shadows inwidth' >{formData.yearofpassing}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>State</h><p className='mt-1 p-1 shadows inwidth' >{formData.State}</p></Col>
+                                <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'><h>Pincode</h><p className='mt-1 p-1 shadows inwidth' >{formData.Pincode}</p></Col>
                             </Row>
                         </div>
                         <div className="mt-5 mb-5 w-100 d-flex justify-content-center">

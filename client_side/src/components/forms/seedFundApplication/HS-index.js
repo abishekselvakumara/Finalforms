@@ -7,14 +7,23 @@ import '../formstyle/formstyles.css'
 function Form() {
     const [page, setPage] = useState(0);
     const [formData, setFormData] = useState({
-        DateofVisit: "",
-        InTime: "",
-        Purpose: "",
-        Visitors: "",
-        Accommodation: "",
-        NoOfDays: "",
-        inTime: "",
-        outTime: "",
+        FacultyName: "",
+        Designation: "",
+        Department: "",
+        Email : "",
+        MobileNumber: "",
+        Title: "",
+        Domain: "",
+        Category: "",
+        Patentable:"",
+        Level:"",
+        ProblemStatement:"",
+        ProposedSolution:"",
+        Uniqueness:"",
+        MarketPotential:"",
+        TotalProjectCost:"",		
+        SeedFunRequested:"",	
+        Justification:"",
     });
 
 

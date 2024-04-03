@@ -35,17 +35,17 @@ function Personal({ formData, setFormData, setPage }) {
                         </Row>
                         <Row><ProgressBar now={33.33} visuallyHidden className='p-0 m-0' style={{ height: '.75vh' }} /></Row>
                     </Row>
-                    <form onSubmit={handleFormSubmit}  >
+                    <form onSubmit={handleFormSubmit}  className='formscroll'>
                         <div className='w-100 d-flex flex-column align-items-center'>
                             <div className='formdata'>
                                 <Row className='d-flex justify-content-between'>
                                     <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
                                         <h>Name</h>
-                                        <input className='mt-1 p-1 shadows inwidth' name='Name' value={formData.Name} onChange={getinput} />
+                                        <input className='mt-1 p-1 shadows inwidth' name='Name' required value={formData.Name} onChange={getinput} />
                                     </Col>
                                     <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
                                         <h>Date of Birth</h>
-                                        <Form.Control className='mt-1 p-1 shadows inwidth' type='date' name='DateofBirth' min="1900-01-01" max="2050-01-01" value={formData.DateofBirth} onChange={getinput} />
+                                        <Form.Control className='mt-1 p-1 shadows inwidth' type='date' required name='DateofBirth' min="1900-01-01" max="2050-01-01" value={formData.DateofBirth} onChange={getinput} />
                                     </Col>
                                 </Row>
                             </div>
@@ -53,11 +53,11 @@ function Personal({ formData, setFormData, setPage }) {
                                 <Row className='d-flex justify-content-between'>
                                     <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
                                         <h>Phone Number</h>
-                                        <input className='mt-1 p-1 shadows inwidth' type="tel" pattern='[0-9]{10}' title='Enter Valid 10 Digit Number' name='phonenumber' value={formData.phonenumber} onChange={getinput} />
+                                        <input className='mt-1 p-1 shadows inwidth' type="tel" required pattern='[0-9]{10}' title='Enter Valid 10 Digit Number' name='phonenumber' value={formData.phonenumber} onChange={getinput} />
                                     </Col>
                                     <Col lg={5} xs={12} className='d-flex flex-column mt-4 padding'>
                                         <h>E-Mail</h>
-                                        <input className='mt-1 p-1 shadows inwidth' type='email' name='email' value={formData.email} onChange={getinput} />
+                                        <input className='mt-1 p-1 shadows inwidth' type='email' required name='email' value={formData.email} onChange={getinput} />
                                     </Col>
                                 </Row>
                             </div>

@@ -14,6 +14,7 @@ import SchoolTeacher from './pages/registerationForm/schoolTeacher.js';
 import Industry from './pages/registerationForm/industry.js';
 import ScheduleVisit from './pages/bookingForm/scheduleVisit.js';
 import WorkOrder from './pages/bookingForm/workOrder.js';
+import EquipmentReservation from './pages/bookingForm/equipmentReservation.js';
 import SeedFundApplication from './pages/bookingForm/seedFundApplication.js';
 import NoPage from './pages/noPage.js'
 import Home from './pages/home.js';
@@ -38,6 +39,7 @@ function App() {
         <Route path='/register/industry' element={<Industry/>}/>
         <Route path='/schedulevisit' element={<ScheduleVisit/>}/>
         <Route path='/Workorder' element={<WorkOrder/>}/>
+        <Route path='/equipmentreservation' element={<EquipmentReservation/>}/>
         <Route path='/seedfundapplication' element={<SeedFundApplication/>}/>
         <Route path="*" element={<NoPage />} />
         </Routes>
